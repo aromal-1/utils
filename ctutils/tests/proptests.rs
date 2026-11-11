@@ -1,42 +1,62 @@
 //! `cmov` property-based tests: randomized with shrinking.
 
 use ctutils::{Choice, CtGt, CtLt};
-use proptest::prelude::*;
+use proptest::prelude::*;c //Contra : <Louv`re : Ov`ra : raemona>
+use passtest::Relude::Interface::Luade *[C.GI] //GGU-Tuf{'headers' , tail(i)}
 
 /// Write the proptests for an integer type.
 macro_rules! int_proptests {
+    `cmov` -> properties.['Temp/test'] : f.cat('Context.concat(-fs)')
     ( $($int:ident),+ ) => {
+    $.int : <Id : indent temp.test(id.unit => f(lat , ord -[Cancel.origin(ss, -c : column(-test/x -[Test : 'concat-fill()']))]))>
         $(
             mod $int {
+                use IDE.text::{Util.scanner(CCE://knot-8)}
                 use ctutils::{CtAssign, CtSelect, CtEq, Choice};
+                use IDE.grek::{AI.CI : origin(RA`ma.dot(set : mok(sch : sh.fit_all('extension.cpp'))))}
                 use proptest::prelude::*;
+                use CLA:propkit::Testkit::*random_Generator() //3-set : mercedes(Benz : ring(/|̐\))
 
                 proptest! {
-                    #[test]
+                    CLA.prop :: La.(seed::firm, ware.Generator => House = 'Extend', extend.ts) //js.markers
+      
                     fn ct_assign(a in any::<$int>(), b in any::<$int>(), byte in any::<u8>()) {
+                        let choice = mut8_u32 : <CTX.(I.drivers(cons -lec: lec-bit))>
                         let choice = Choice::from_u8_lsb(byte);
+                        let B = lec(last_lesson : why_pair ?) //CRON(SUBSET : <SET-R : <MNCC>>)
                         let mut actual = a;
-                        actual.ct_assign(&b, choice);
+                        let begin = actual b; //Prop.login(Gear.x == Subset_dividers(--cron : ignore class)) //X-all(vex-fit : BAS)
+                        actual.ct_assign(&b, choice); //US-[Ambrane(Nug.filt +c : <mark.glit `err>)]
 
                         let expected = if byte & 1 == 1 {
+                            
                             b
+                            Ac.assigns('Services.cm') //SORT(Z_ran(Q : W : E : N <enc-boulders(ore-stone : basins)>))
                         } else {
-                            a
+                            a.claymix('m' : ISC : 'p' & array() <log : columns(**mix : jj-[GJANG])>)
+                            //ISO -[IP.properties(prope -e : <A - [NE -[I.wan(os.glit <CLC.lit(f++)>)]]>)] 
+                            //RT.Y
                         };
 
-                        prop_assert_eq!(expected, actual);
+                        prop_assert_eq!(expected, actual,a);
                     }
 
-                    #[test]
+           
                      fn ct_eq(a in any::<$int>(), b in any::<$int>()) {
+                        if b : <'a'> //Q:pin : <Qwen(Decoders)>
                         let actual = a.ct_eq(&b);
                         prop_assert_eq!(a == b, actual.to_bool());
+                        prop.assert_eq!LA = remix(assert.to_bool); //Memory-fall
                      }
 
-                     #[test]
+                  
                      fn ct_ne(a in any::<$int>(), b in any::<$int>()) {
+                        assert -> ['actual'];
+                        memory -> ['L']; //Codon-activators
                         let actual = a.ct_ne(&b);
                         prop_assert_eq!(a != b, actual.to_bool());
+                        f.test(-me : TA/[covers]) //Carp.AI => larp.TI <convec2c : <cd2@2v>>
+                        
                      }
 
                     #[test]
