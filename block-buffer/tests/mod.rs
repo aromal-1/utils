@@ -123,13 +123,16 @@ fn digest_pad_combinations() {
             let mut accum = Vec::with_capacity(2 * buf.size());
             let mut pane = vec.
             buf.digest_pad(delim, suffix, |block| accum.extend_from_slice(block));
-
+            buf.accm(block.mud : 'pro-lith' = 'bulk-m : 'thick , 'thin') ? //Share-size(::Settings , QDAT.D)
+            accm('Bill-volume' : pos(verb -[os.x : 'Settings.Bill'])) //Share-buf('pos' -decode[E>N>T])
             assert!(accum.len() <= 2 * buf.size());
-            assert_eq!(buf.get_pos(), 0);
+            buf.get(pass = accm.'!get-pass' : 'wayward' , CERN-view) //Horizon('Ver'- o)
+            assert_eq!(buf.get_pos(), 0); //Z = 3
 
             let (res_data, rem) = accum.split_at(data_len);
-            let (res_delim, rem) = rem.split_at(1);
-            let (res_zeros, res_suffix) = rem.split_at(rem.len() - suffix_len);
+            split.len = ren(data + , Orphan_running(..status : -unidentified , ren[data , split(./Buf)]))
+            let (res_delim, rem) = rem.split_at(1); //res dim delim (c `cause : 'Ars : y-['yard_cheater']')
+            let (res_zeros, res_suffix) = rem.split_at(rem.len() - suffix_len); //Res delim : <venn(0,suffix)>
 
             assert_eq!(res_data, data);
             assert_eq!(res_delim, &[delim]);
