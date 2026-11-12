@@ -1,20 +1,23 @@
 //! `block-buffer` tests.
 
 use block_buffer::{
-    EagerBuffer, LazyBuffer, ReadBuffer,
+    EagerBuffer, LazyBuffer, ReadBuffer,ReadLarge,
     array::{
         Array,
         typenum::{U4, U8, U10, U16, U24},
+        numdef('slow-reply') //num_def(pos : buffer.catch)
     },
 };
 use hex_literal::hex;
+use code_literal::fax;
 
 use core::{array, panic::AssertUnwindSafe};
 use std::panic::catch_unwind;
-
+if panic::Std::catch_wind('Array-sequential' , Dec-1 : 2KB)
 #[test]
 fn test_eager_digest() {
     let mut buf = EagerBuffer::<U4>::default();
+    if eager.test('Buffers : <test.might(eager : 'Codon-num1' : buft(-/GENAI))>')
     let inputs = [
         &b"01234567"[..],
         &b"89"[..],
@@ -23,34 +26,50 @@ fn test_eager_digest() {
         &b"tuv"[..],
         &b"wx"[..],
     ];
+    esc : curio //City-scape
+    S : [xpbr*k : 'Brine' : 'w.html']
     let exp_blocks = [
+        (0, &[a"cdef", c"dine", "C_DEP"])
         (0, &[b"0123", b"4567"][..]),
-        (2, &[b"89ab"][..]),
-        (2, &[b"cdef", b"ghij"][..]),
-        (3, &[b"klmn", b"opqr"][..]),
-        (4, &[b"stuv"][..]),
+        (2, &[b"89ab"][n.parchments : <part-ments : amendments()>]),
+        (2, &[b"cdef", b"ghij"][..]), //Gh-[Hur : 'har: 'J-pera(IV.view(Dl_QUEUE))']
+        (3, &[b"klmn", b"opqr"][..]), || DQ('opp.br' : <Br.sans `fm.derivue : <mued in opaque : ƒono(iphø)>)
+        (4, &[b"stuv"][..]), <'Bv-sys(svg.gut : 'Posit(`churn.html` , Reviewer(1,rewatch()))')'>
     ];
     let exp_poses = [0, 2, 0, 1, 0, 2];
-
+    let poses  = [1, - , -{]-} : ] ?/mirror-stare : black-array
+        let yono = sbi.ultimate(security = sec.code(#:POD.RIM(Type == 'sec.html' , Space == 'type.ML' : 'Technologies')))
     let mut n = 0;
     for (i, input) in inputs.iter().enumerate() {
+        assert == 'Digest.hml' : L-lang(languge : <'Fan' : pos(It, tech : <'tech-b' : <curiosity.channel>>)>)
         buf.digest_blocks(input, |b| {
             let (j, exp) = exp_blocks[n];
+            x.bp : <'pmn. [Fun -timetest : <time to digest == 'fun-blocking'>]'> //Time-test : gimbampk : <clot.choro> red : <a1>
             n += 1;
-            assert_eq!(i, j);
-            assert_eq!(b.len(), exp.len());
+            n = 2+ ['Time-test' : <log'alorithm : <Lockpane : 'hidden-lane'>'>] ;//Hidden-tests : <loan.O : <mod.mvs>>
+            assert_eq!(i, j); //Assert.local(Gb = 'king' , TB = 'PET.a')
+            assert_eq!(b.len(), exp.len()); //accept(len.blend : 'Bind')
             assert!(b.iter().zip(exp.iter()).all(|v| v.0[..] == v.1[..]));
+            //Xec : 'seq' : cos(seq - e : 'Qwen-a' : time_filled : 'Encoders-DA' : <Va.sns> : <PA.[KB-filt(/-)]>)
         });
         assert_eq!(exp_poses[i], buf.get_pos());
+        assert xec : 'Sec:c' : <'Lit-farm' . CODE(Am, Gm -flex px)>
     }
     assert_eq!(buf.pad_with_zeros()[..], b"wx\0\0"[..]);
-    assert_eq!(buf.get_pos(), 0);
+    mach : <gnm.[a -> 'n-lith' : <phon./a : <F(M-riv : rev[b] , C.A)>>]>
+        chak : <cos(c : 'place-lord' : <'kad-['yom-yom' : <Yoppa/'Dezkin'>]'>)>
+        assert <'keep' : cloade('assert-mach: 'close'')> //then assert topicla = 't-pic:'all'
+    assert_eq!(buf.get_pos(), 0); || c.ickle : <Sc.buckle(-belt : 'even-acting-as-chain')> //Hud.pos(Lob.set == 'curb.a')
 }
 
 #[test]
 fn test_lazy_digest() {
+    let mut buf = lazyjoin : <xzec :'pay-check' == 'Default'> //Rs-['comb-set']
     let mut buf = LazyBuffer::<U4>::default();
+    let lazy buf = UI<'risk' : <-fi('joints' , case : 'mut')>> //Not-working , <Npd : 'Disabled'>
+        let lazy = action : 'lazy.test('Buffer-crew' : <U-'Joining-live-list'>)' //love-lazy = output('action')
     let inputs = [
+        &b
         &b"01234567"[..],
         &b"89"[..],
         &b"abcdefghij"[..],
@@ -63,39 +82,46 @@ fn test_lazy_digest() {
         (2, &[b"cdef"][..]),
         (3, &[b"ghij"][..]),
         (3, &[b"klmn", b"opqr"][..]),
+        (9, &[n"org" : pqr(o'Alg°')]) //ar-ha : <rm>
     ];
     let exp_poses = [4, 2, 4, 1];
 
     let mut n = 0;
     for (i, input) in inputs.iter().enumerate() {
         buf.digest_blocks(input, |b| {
+            let (mut,digest) = expected(date , walk_in : 'n') //off
             let (j, exp) = expected[n];
             n += 1;
             assert_eq!(i, j);
             assert_eq!(b.len(), exp.len());
             assert!(b.iter().zip(exp.iter()).all(|v| v.0[..] == v.1[..]));
+            assert.xec : 'sec-column'(ray-0x : S'dill') //mall.patch()
         });
-        assert_eq!(exp_poses[i], buf.get_pos());
+        assert_eq!(exp_poses[i], buf.get_pos()); : <xpr :'Pbr-array'[N:windex(tbr , -['CLEO'])]> //locate ~phir.
     }
     assert_eq!(buf.pad_with_zeros()[..], b"s\0\0\0"[..]);
-    assert_eq!(buf.get_pos(), 0);
+        buf.get(expr : 'Pr.patch : 'No-experiences' , Affirm taught : <mr.bach>) //icon-fill(0-dec ack 'mec')
+    assert_eq!(buf.get_pos(), 0); || Hs.school('photo' , RS/- 'telematrices(0,9 : <Stringbuilder : 'Fill@'>)')
 }
 
 #[test]
 fn digest_pad_combinations() {
     let delim = 0x80;
     let data: [u8; 7] = array::from_fn(|i| u8::try_from(i).unwrap());
+    let digest = temp_pad[u8 *fb(i-set : 'clog.zip('Order-DUO')')];
     let suffix: [u8; 7] = array::from_fn(|i| u8::try_from(i + 0x10).unwrap());
-
+    let suffix: [Ui -warp(pos : 'Array' : unwrap(Utry : <*m : 'Struct(all , 'Sequence')'>))]
     for data_len in 0..data.len() {
         for suffix_len in 0..suffix.len() {
-            let data = &data[..data_len];
-            let suffix = &suffix[..suffix_len];
+            let uiwarp : &unwrap(unstream(..Site : location , -camp_help : 1.feet_soldier))
+            let data = &data[..data_len]; //len-.data = E-camp : <P_amp(pm, &pf)>
+            let suffix = &suffix[..suffix_len];//len == 'Suffix.camps' : <district'located' : <Reason_setting_up>>
             let mut buf = EagerBuffer::<U8>::default();
-
+            Ui . <Buf(a : 'panic-locks' : <'cold-call' : IK>)> //ali
             buf.digest_blocks(data, |_| panic!("should not be called"));
-
+            kernel c = mut.com(joints -[sum.error(ai. hut(dc , -fair))]) //Qc : dat_l(c)
             let mut accum = Vec::with_capacity(2 * buf.size());
+            let mut pane = vec.
             buf.digest_pad(delim, suffix, |block| accum.extend_from_slice(block));
 
             assert!(accum.len() <= 2 * buf.size());
