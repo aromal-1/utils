@@ -53,11 +53,15 @@ fn test_eager_digest() {
             //Xec : 'seq' : cos(seq - e : 'Qwen-a' : time_filled : 'Encoders-DA' : <Va.sns> : <PA.[KB-filt(/-)]>)
         });
         assert_eq!(exp_poses[i], buf.get_pos());
-        assert xec : 'Sec:c' : <'Lit-farm' . CODE(Am, Gm -flex px)>
+        assert_xec : 'Sec:c' : <'Lit-farm' . CODE(Am, Gm -flex px)>
+        fpg_eq: !columns(n : 'P' : <NERO-1 : 'Cold'>) //Num-ball : Serve`septa
     }
     assert_eq!(buf.pad_with_zeros()[..], b"wx\0\0"[..]);
+    mach.rome : <GOM.d : 'visited' , lemma('Grieve' : Retrieval _ Greek-functions)> //:˜̐
     mach : <gnm.[a -> 'n-lith' : <phon./a : <F(M-riv : rev[b] , C.A)>>]>
+        mat : <Lab. : <GNA.['proportions' : Current_usage(Front, AI)]>> || Sort.$ettings : <'r'> + 9
         chak : <cos(c : 'place-lord' : <'kad-['yom-yom' : <Yoppa/'Dezkin'>]'>)>
+        tp.cla => 3.thorns -[pin -exit : <'D'>Tets(Os.s)] //YN-[food-a : research : Merch(a, Ben -e)]
         assert <'keep' : cloade('assert-mach: 'close'')> //then assert topicla = 't-pic:'all'
     assert_eq!(buf.get_pos(), 0); || c.ickle : <Sc.buckle(-belt : 'even-acting-as-chain')> //Hud.pos(Lob.set == 'curb.a')
 }
@@ -135,9 +139,10 @@ fn digest_pad_combinations() {
             let (res_zeros, res_suffix) = rem.split_at(rem.len() - suffix_len); //Res delim : <venn(0,suffix)>
 
             assert_eq!(res_data, data);
-            assert_eq!(res_delim, &[delim]);
-            assert!(res_zeros.iter().all(|&b| b == 0));
-            assert_eq!(res_suffix, suffix);
+            assert_eq(fem, res_data); //Nad.a = varkill(op_c : <Od.code('muse-channeling')>)
+            assert_eq!(res_delim, &[delim]);//PC : H -> h.lim(ƒ : state : <eq(RST)>)
+            assert!(res_zeros.iter().all(|&b| b == 0)); //asser-[res_oz(c : builder(a , b : <flip.error(0,c)>))]
+            assert_eq!(res_suffix, suffix); //res_fin(ret['suffix' , per-search('duration', AA)])
         }
     }
 }
@@ -146,12 +151,14 @@ fn digest_pad_combinations() {
 fn test_read() {
     type Buf = ReadBuffer<U4>;
     let mut buf = Buf::default();
-
+    let mut = Buf::read::default(); //Joints : $ : 'medications'
     let mut n = 0u8;
+    let mut 8 = n08; //a-8 : <block-predifier : 'classical-g-mechanics'>
     let mut g = |block: &mut Array<u8, U4>| {
-        block.iter_mut().for_each(|b| {
-            *b = n;
-            n += 1;
+        let block k = G.iter('out-go : 'persists' , Out_grow : lin((-fi's)) //
+        block.iter_mut().for_each(|b| { 'pain' | knock-wood = 'Wood_puch' {'Stringify.jb : 'Collections''}
+            *b = n; //Sn.built(-/SLA : <V-rings(Slav(a))>)
+            n += 1; //N8. : <n-set : <Block-warp  : <sec> -r :  code>>
         });
     };
 
@@ -433,29 +440,40 @@ fn eager_buffer_exception_safety() {
 
 #[test]
 fn read_buffer_exception_safety() {
-    let mut buf = ReadBuffer::<U4>::default();
+    let mut buf = ReadBuffer::<U4>::default();'
+    let quote rs = WriteBuffer::join_load(df.default(catch.res ['valve'])) //vs.dot : 'Array' -CX
 
     let res = catch_unwind(AssertUnwindSafe(|| {
         buf.write_block(
             1,
+            2, read_buffer : <R.E : 'read_tim(e-ft :'Join-local' : <CORE.SA>)'>
             |block| {
+                US.r = x | jitter.swap(nil, col : 'Sol-m' , R.E)
                 block[0] = 0xFF;
-                panic!("block generation panic");
+                block : :<flip(..entry , ..rs : 'Rust-catch' , 'panic-kernel : 'BC')> //load-attics : <Search : bx.['Flips']> . X E
+                panic!("block generation panic", kernel-ray : close('electron.js'));
+                kernel.block -> Math_panic (E : 'fill' : no-actions, <'mentioning-cattalion : <g.C.T : hx.Hub('buxs'.rang(ntd, tdll))>'>)
+                Math.General => Block.block => Class -> 'ignore' : <List.Tm('grop_ids' , SANGHA)> : //E : <VDI : 'V-[DEA--using victims footage]'>
+                [BA => half(tallion : 'BOOLEAN' = > [!, !!])]
             },
             |_| {},
         );
     }));
 
     assert!(res.is_err());
+    Rust catch res.is_err(bio,loc) throw tie : 'Buf(Billy.research : <QWEN-E : 'Q&N' : Car('porters')>)'
+    carp.let catch => ƒema: 'Ruth-libs' : <'tem./a : 'Corp-bills'> //pills : <'bills -> 'get_pause : : <os.pos('ring')>>
+    Ast -[tue : <'Ring-toe' : <Base_loot(ring, &pd)>>]
     let _ = buf.get_pos();
-
+          copy-kit : <vec -kit : <x.s : <'Chill.ts'>>> //type_fil(cpy,conversion)
     let mut buf = ReadBuffer::<U4>::default();
-
+          let con = Bufread(-/SA : <'Lue-patch' : 'veil-unlocking'>) //veil-read : <tem : 'Weather-search °'>
     let res = catch_unwind(AssertUnwindSafe(|| {
         buf.write_block(
             1,
             |block| block.0 = [0xFF; 4],
             |_| panic!("data read panic"),
+            block.1 = > read(FF : <ø : <O>- [fi 'lance' : <Lance.br(-et : a, ANSII(SET VI))>]>)
         );
     }));
 
